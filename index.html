@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puzzles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+<div class="navbar">
+ 
+ <ul class="nav">
+  <li><a href="#GAME2">5*5 puzzle</a></li>
+  <li><a href="#GAME3">4*4 puzzle</a></li>
+  <li><a href="#GAME">3*3 puzzle</a></li>
+  
+ </ul>
+</div>
+
+
+<div class="game2"  id="GAME2">
+ 
+  <div id="board2">
+   
+  </div>
+  <div class="footer2">
+    <button  onclick="window.location.reload()">new game</button>
+    <span>move : <span id="turns2">0</span>    </span>
+    <span>time :  <span id="time2">0 </span>   </span>
+</div>
+
+<div class="container">
+  
+  <button id="btn" onclick="togglehide()">
+    show/hide instructions
+  </button>
+  <p id="para">
+    start game by clicking on <strong>new game</strong> move tiles adjacent to black blank box by clicking on boxes adjacent to black blank box inorder to complete this avengers puzzle 
+  </p>
+</div>
+
+
+</div>
+ 
+
+<div class="game3"  id="GAME3">
+  
+  <div id="board3">
+   
+  </div>
+  <div class="footer3">
+    <button  onclick="window.location.reload()">new game</button>
+    <span>move : <span id="turns3">0</span>    </span>
+    <span>time :  <span id="time3">0 </span>   </span>
+</div>
+
+<div class="container">
+  
+  <button id="btn2" onclick="togglehide2()">
+    show/hide instructions
+  </button>
+  <p id="para2">
+    start game by clicking on <strong>new game</strong> move tiles adjacent to  blank box by clicking on boxes adjacent to  blank box inorder to complete this 15 puzzle (make all numbers in numerical order from 1 to 15)
+  </p>
+</div>
+</div>
+  
+<div class="game"  id="GAME">
+  <div id="board">
+   
+  </div>
+  <div class="footer">
+    <button  onclick="window.location.reload()">new game</button>
+    <span>move : <span id="turns">0</span>    </span>
+    <span>time :  <span id="time"> 0 </span>   </span>
+</div>
+<div class="container">
+  
+  <button id="btn3" onclick="togglehide3()">
+    show/hide instructions
+  </button>
+  <p id="para3">
+    start game by clicking on <strong>new game</strong> move tiles adjacent to  blank box by clicking on boxes adjacent to  blank box inorder to complete this doremon puzzle
+  </p>
+</div>
+</div>
+ 
+
+
+  <script src="script.js"></script>
+</html>
