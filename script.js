@@ -81,10 +81,10 @@ function CLICK2(){
             otherTile2=tile2[l];
         }
     }
-    let currcoords2 = currTile2.id.split("-");// ex)"0-0" -> ["0","0"]
+    let currcoords2 = currTile2.id.split(".");// ex)"0-0" -> ["0","0"]
     let r_2 = parseInt(currcoords2[0]);
     let c_2 = parseInt(currcoords2[1]);
-    let otherCoords2 = otherTile2.id.split("-");
+    let otherCoords2 = otherTile2.id.split(".");
     let r2_2=parseInt(otherCoords2[0]);
     let c2_2=parseInt(otherCoords2[1]);
     let moveLeft2 = r_2==r2_2 && c2_2==c_2-1;
@@ -213,7 +213,7 @@ window.onload = function(){
             //tile is an img tag
             //<img id="0-0" src="1.jpg">
              tile2[flag3_2] = document.createElement("img");
-            tile2[flag3_2].id=r.toString()+"-"+c.toString();
+            tile2[flag3_2].id=r.toString()+"."+c.toString();
             tile2[flag3_2].src= ("_"+b.shift()).toString() + ".jpg";
 
             
